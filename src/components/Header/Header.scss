@@ -1,0 +1,76 @@
+@import '../../assets/scss/var.scss';
+
+
+.header{
+    background-color: $mainDark;
+    width: 8%;
+    height: 100vh;
+    padding-top: 24px;
+}
+.nav__logo{
+    display: block;
+    margin: 0 auto;
+    height: 56px;
+    width: 56px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.nav__list{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+    padding-left: 12px;
+    margin-top: 20px;
+    .active{
+        background-color: #2D303E ;
+        position: relative;
+        a{
+            background-color: #EA7C69 ;
+            color: white;
+            }
+            &::before{
+                content: '';
+                display: block;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                bottom: -12;
+                right: 0;
+                transform: rotate(90deg)
+                
+            }
+            &::after{
+                content: '';
+                display: block;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: -12;
+                right: 0;
+            }
+        }
+}
+.nav__item{
+    padding: 12px;
+    border-radius: 12px 0px 0px 12px;
+    display: flex;
+    justify-content: center;
+
+    
+    a{
+        color: #EA7C69;
+        padding: 16px;
+        display: block;
+        border-radius: 8px;
+        display: block;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
